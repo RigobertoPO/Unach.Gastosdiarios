@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34902.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capa de datos", "Capa de datos", "{0109CE0C-C556-441F-8A25-B6CBCC70293A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capa logica", "Capa logica", "{4E935E66-3298-4BB0-817A-5E8E70C9E9B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Capa de vista", "Capa de vista", "{CE79580A-CD16-452F-B70B-67AC22FE324F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unach.Gastosdiarios.WPF", "Unach.Gastosdiarios.WPF\Unach.Gastosdiarios.WPF.csproj", "{B0755336-D713-43C6-B592-0BA420A04430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unach.Gastosdiarios.Logica", "Unach.Gastosdiarios.Logica\Unach.Gastosdiarios.Logica.csproj", "{3F81280B-19D3-4FD3-A5D2-D217E5DA81EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unach.Gastosdiarios.Conexion", "Unach.Gastosdiarios.Conexion\Unach.Gastosdiarios.Conexion.csproj", "{FBC3BECC-4A3C-4162-B3C7-7F86799167DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0755336-D713-43C6-B592-0BA420A04430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0755336-D713-43C6-B592-0BA420A04430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0755336-D713-43C6-B592-0BA420A04430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0755336-D713-43C6-B592-0BA420A04430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F81280B-19D3-4FD3-A5D2-D217E5DA81EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F81280B-19D3-4FD3-A5D2-D217E5DA81EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F81280B-19D3-4FD3-A5D2-D217E5DA81EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F81280B-19D3-4FD3-A5D2-D217E5DA81EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC3BECC-4A3C-4162-B3C7-7F86799167DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC3BECC-4A3C-4162-B3C7-7F86799167DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC3BECC-4A3C-4162-B3C7-7F86799167DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC3BECC-4A3C-4162-B3C7-7F86799167DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B0755336-D713-43C6-B592-0BA420A04430} = {CE79580A-CD16-452F-B70B-67AC22FE324F}
+		{3F81280B-19D3-4FD3-A5D2-D217E5DA81EE} = {4E935E66-3298-4BB0-817A-5E8E70C9E9B0}
+		{FBC3BECC-4A3C-4162-B3C7-7F86799167DD} = {0109CE0C-C556-441F-8A25-B6CBCC70293A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B867F93-84A5-43D7-95E4-F1F321EBA532}
+	EndGlobalSection
+EndGlobal

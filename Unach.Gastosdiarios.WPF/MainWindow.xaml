@@ -1,0 +1,47 @@
+﻿<Window x:Class="Unach.Gastosdiarios.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unach.Gastosdiarios.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource ColorAzul}"/>
+            </Grid.Background>
+        </Grid>
+        <Grid Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource ColorAreaTitulo}"/>
+            </Grid.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="65*"/>
+                    <ColumnDefinition Width="226*"/>
+                    <ColumnDefinition Width="105*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="Imagenes/logogastos.png"/>
+                <TextBlock Grid.Column="1" Text="Control de gastos" Style="{DynamicResource TituloTextBlock}" VerticalAlignment="Center" Margin="20"/>
+
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource ColorGris}"/>
+            </Grid.Background>
+        </Grid>
+        <Grid Grid.Row="3" x:Name="ContenedorGrid">
+            <Grid.Background>
+                <SolidColorBrush Color="{DynamicResource ColorContenido}"/>
+            </Grid.Background>
+        </Grid>
+    </Grid>
+</Window>
