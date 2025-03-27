@@ -27,8 +27,11 @@
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-                    <ComboBox x:Name="CategoriasCB" Grid.Column="0" />
-                    <Button x:Name="AgregarBT" Content="Agregar" Grid.Column="1"/>
+                    <ComboBox x:Name="CategoriasCB" Grid.Column="0" 
+                          DisplayMemberPath="Descripcion" SelectedValuePath="Id"
+                             SelectionChanged="CategoriasCB_SelectionChanged"/>
+                    <Button x:Name="AgregarBT" Content="Agregar" Grid.Column="1"
+                            Click="AgregarBT_Click"/>
                 </Grid>
                 <DataGrid x:Name="ListaGatosDG" Grid.Row="2"/>
 

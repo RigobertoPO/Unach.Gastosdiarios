@@ -1,17 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using Unach.Gastosdiarios.Conexion;
 
 namespace Unach.Gastosdiarios.WPF.Gastos
 {
@@ -25,7 +16,20 @@ namespace Unach.Gastosdiarios.WPF.Gastos
             InitializeComponent();
             Unach.Gastosdiarios.Logica.GastoMetodos metodos = 
                 new Logica.GastoMetodos();
-            CategoriasCB.ItemsSource = metodos.ObtenerCategias();
+            CategoriasCB.ItemsSource = metodos.ObtenerCategorias();
+
+        }
+
+        private void CategoriasCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var categoriaSeleccionada = (Categoria)CategoriasCB.SelectedItem;
+            MessageBox.Show(categoriaSeleccionada.Descripcion);
+        }
+
+        private void AgregarBT_Click(object sender, RoutedEventArgs e)
+        {
+            NuevoGastoWindow nuevo = new NuevoGastoWindow();
+            nuevo.ShowDialog();
         }
     }
 }

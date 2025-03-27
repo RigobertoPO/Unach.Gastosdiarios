@@ -9,7 +9,7 @@ namespace Unach.Gastosdiarios.Logica
 {
     public class GastoMetodos
     {
-        public List<Categoria> ObtenerCategias()
+        public List<Categoria> ObtenerCategorias()
         {
             List<Categoria> listaC = new List<Categoria>();
             listaC.Add(new Categoria { Id = 1, Descripcion = "Comida" });
