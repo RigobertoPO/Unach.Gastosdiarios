@@ -17,5 +17,12 @@ namespace Unach.Gastosdiarios.Logica
             listaC.Add(new Categoria { Id = 3, Descripcion = "ropa" });
             return listaC;
         }
+        public List<Gasto> ObtenerGastos()
+        {
+            List<Gasto> listaC = new List<Gasto>();
+            GastosContext context = new GastosContext();
+            listaC = context.ObtenerGastos();
+            return listaC;
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using Unach.Gastosdiarios.Conexion;
+using Unach.Gastosdiarios.Logica;
 
 namespace Unach.Gastosdiarios.WPF.Gastos
 {
@@ -17,7 +18,13 @@ namespace Unach.Gastosdiarios.WPF.Gastos
             Unach.Gastosdiarios.Logica.GastoMetodos metodos = 
                 new Logica.GastoMetodos();
             CategoriasCB.ItemsSource = metodos.ObtenerCategorias();
+            CargarDatos();
+        }
 
+        private void CargarDatos()
+        {
+            GastoMetodos metodos = new GastoMetodos();
+            ListaGatosDG.ItemsSource = metodos.ObtenerGastos();
         }
 
         private void CategoriasCB_SelectionChanged(object sender, SelectionChangedEventArgs e)

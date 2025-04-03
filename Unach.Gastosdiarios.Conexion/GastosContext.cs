@@ -27,9 +27,10 @@ namespace Unach.Gastosdiarios.Conexion
                 {
                     _gastos.Add(new Gasto {Id=int.Parse(reader["Id"].ToString()),
                         Descripcion=reader["Descripcion"].ToString(),
-                        Monto=decimal.Parse(reader["Monto"].ToString())
-
-
+                        Monto=decimal.Parse(reader["Monto"].ToString()),
+                        IdCategoria = int.Parse(reader["IdCategoria"].ToString()),
+                        FechaRegistro = DateTime.Parse(reader["FechaRegistro"].ToString()),
+                        Activo = Convert.ToBoolean(reader["Activo"].ToString())
                     });
                 }
                 return _gastos;

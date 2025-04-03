@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Unach.Gastosdiarios.Logica;
 
 namespace Unach.Gastosdiarios.WPF
 {
@@ -23,7 +24,10 @@ namespace Unach.Gastosdiarios.WPF
         public MainWindow()
         {
             InitializeComponent();
+           
         }
+
+       
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {

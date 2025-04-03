@@ -10,12 +10,13 @@ namespace Unach.Gastosdiarios.Conexion
     public class Conexion
     {
         private readonly string cadenaConexion =
-           "server=localhost;port=3306;" +
-            "database=controlgastos;User Id=root";
+           "server=localhost;" +
+            "database=controlgastos;User Id=root;";
         public MySqlConnection ObtenerConexion()
         {
             MySqlConnection conectar =
-                new MySqlConnection();
+                new MySqlConnection(cadenaConexion);
+
             try
             {
                 conectar.Open();

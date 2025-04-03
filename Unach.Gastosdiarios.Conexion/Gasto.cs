@@ -13,6 +13,6 @@ namespace Unach.Gastosdiarios.Conexion
         public decimal Monto { get; set; }
         public int IdCategoria { get; set; }
         public DateTime FechaRegistro { get; set; }
-        public byte Activo { get; set; }
+        public bool Activo { get; set; }
     }
 }
